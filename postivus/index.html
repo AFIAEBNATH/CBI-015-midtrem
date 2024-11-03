@@ -1,72 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>postivus</title>
+    <title>Document</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-
-
-<style>
-    .bebas-neue-regular {
-        font-family: "Bebas Neue", serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-      
-</style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b4d7b66561.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header class="p-10 bg-[#FFFFFF]">
-        <nav class="flex justify-between">
-            <div class="h-[36px] w-[219.54p]">
-                <img src="desktop/Frame 9.png" alt="logo">
-            </div>
-            <div>
-                <ul class="hidden md:flex gap-4">
-                    <li>About us</li>
-                    <li>Service</li>
-                    <li>Use case</li>
-                    <li>prching</li>
-                    <li>Blog</li>
-                    <li>Request a quote</li>
-                </ul>
-            </div>
-        </nav>
 
-        <div class="flex justify-between items-center sm:flex-row md: flex-col ">
-            <div class="">
-                <h1 class="font-bold text-7xl ">Navigating the <br> digital landscape<br> for success</h1><br>
-                    <p class="text-base	">Our digital marketing agency helps businesses grow and <br>succeed online through a range of<br> services including SEO, PPC, social media marketing,<br> and content creation.</p><br>
-                    <button class="py-2 px-5 bg-[#000000] text-sm text-[#FFFFFF] rounded-lg mt-10 p-4 leading-6">Book a consultation</button>
+<body>
+    <header class="p-10 mx-1.5">
+        <nav class="">
+            <div class="flex justify-between  text-[#000000] gap-5">
+                <div>
+                    <img class="w-25 h-25" src="desktop/logo-big.png" />
                 </div>
                 <div class="">
-                <img src="desktop/cover.png" alt="">
+                    <i class="fa-solid fa-bars text-black-500 text-5xl md:hidden"></i>
+                    <ul class="hidden md:flex md:gap-5 md:text-lg md:mt-2 md:items-center">
+                        <li>About Us</li>
+                        <li>Services</li>
+                        <li>Use Cases</li>
+                        <li>Pricing</li>
+                        <li>Blog</li>
+                        <button class="rounded-lg px-5 py-2 p-3 border border-[#000000]">Request a quote</button>
+                    </ul>
                 </div>
+            </div>
+        </nav>
+        <div class="flex justify-between mt-10 mx-3.5">
+            <div>
+                <div class="flex flex-col md:flex-row md:gap-60">
+                    <h1 class="font-family:Space Grotesk font-bold text-7xl mt-20">
+                        Navigating the<br> digital landscape<br> for success
+                    </h1>
+                    <img class="w-[430px] md:w-[600px]  mt-10" src="desktop/cover.png" />
+                </div>
+                <p class="text-lg text-[#000000] md:-mt-20">
+                    Our digital marketing agency helps businesses<br> grow and succeed online through a range
+                    of<br>services including SEO, PPC, social media marketing,<br> and content creation.
+                </p>
+                <button class="p-5 bg-[#000000] text-2xl text-[#FFFFFF] rounded-lg mt-10 ">Book a
+                    consultation</button>
+            </div>
+            <div>
+            </div>
         </div>
-        <div class="flex  justify-between   md:grid-cols-6  sm:grid-cols-3">
-            <div class="">
-                <img src="desktop/amazon.png" alt="">
-            </div> 
+        <div class="">
+            <ul class="grid grid-cols-3 gap-6 md:grid-cols-6 text-[#000000] mt-10">
+                <li><img src="desktop/amazon.png" /></li>
+                <li><img src="desktop/dribble.png" /></li>
+                <li><img src="desktop/hubspot.png" /></li>
+                <li><img src="desktop/notion.png" /></li>
+                <li><img src="desktop/netflix.png" /></li>
+                <li><img src="desktop/zoom.png" /></li>
+
+            </ul>
+        </div>
+    </header>
+    <section class=" mx-3.5 p-10">
+        <div class="flex flex-col md:flex-row gap-5 mt-30 mb-10">
             <div>
-                <img src="desktop/dribble.png" alt="">
+                <h3 class=" font-bold text-2xl text-[#000000] bg-lime-400 p-2 rounded-md">Case Studies</h3>
             </div>
             <div>
-                <img src="desktop/dribble.png" alt="">
-            </div>
-            <div>
-                <img src="desktop/notion.png" alt="">
-            </div>
-            <div>
-                <img src="desktop/netflix.png" alt="">
-            </div>
-            <div>
-                <img src="desktop/zoom.png" alt="">
+                <p class="text-xl text-[#000000]">Explore Real-Life Examples of Our Proven Digital Marketing<br> Success
+                    through Our Case Studies</p>
             </div>
         </div>
-</header>
+        <div
+            class="mx-w-3xl text-center divide-x divide-gray-700 mt-20 bg-[#191A23] flex flex-col md:flex-row justify-between rounded-3xl ">
+            <div class=" text-center rounded-lg p-10 mt-6 mb-6"><!--single-->
+                <p class="text-[#FFFFFF] text-lg leading-6">For a local restaurant, we<br> implemented a targeted
+                    PPC<br> campaign that resulted in a 50%<br> increase in website traffic and a<br> 25% increase in
+                    sales.</p>
+                <div class="flex gap-1 mt-5">
+                    <p class=" text-[#B9FF66]">Learn more</p>
+                    <img src="desktop/Icon.png" />
+                </div>
+            </div>
+            <div class="text-center rounded-lg p-10 mt-6 mb-6">
+                <p class="text-[#FFFFFF] text-lg leading-6">For a local restaurant, we<br> implemented a targeted
+                    PPC<br> campaign that resulted in a 50%<br> increase in website traffic and a<br> 25% increase in
+                    sales.</p>
+                <div class="flex gap-1 mt-5">
+                    <p class=" text-[#B9FF66]">Learn more</p>
+                    <img src="desktop/Icon.png" />
+                </div>
+            </div>
+            <div class="text-center rounded-lg p-10 mt-6 mb-6">
+                <p class="text-[#FFFFFF] text-lg leading-6">For a local restaurant, we<br> implemented a targeted
+                    PPC<br> campaign that resulted in a 50%<br> increase in website traffic and a<br> 25% increase in
+                    sales.</p>
+                <div class="flex gap-1 mt-5">
+                    <p class=" text-[#B9FF66]">Learn more</p>
+                    <img src="desktop/Icon.png" />
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row gap-10 mt-20">
+            <div>
+                <h3 class=" font-bold text-2xl text-[#000000] drop-shadow-lg bg-lime-400 p-2 rounded-md">Our Working Process</h3>
+            </div>
+            <div>
+                <p class="text-xl text-[#000000]">Explore Real-Life Examples of Our Proven Digital Marketing<br> Success
+                    through Our Case Studies</p>
+            </div>
+        </div>
+        <div class="bottom bottom-shadow-lg mt-20 rounded-3xl mx-3.5 bg-[#B9FF66] border border-[#191A23] p-10">
+            
+            <div>
+                <div class="flex justify-between drop-shadow-lg ">
+                    <h5 class=" "><span class="text-[#000000] text-5xl font-bold">01</span> <span
+                            class="text-2xl text-center>Consultation mt-20">Consultation</span></h5>
+                    <img class="w-25 h-25" src="desktop/minus.png" />
+                </div>
+            </div>
+            <div>
+                <hr class="border-t border-black my-4">
+                <p>During the initial consultation, we will discuss your business goals and objectives, target audience,
+                    and current marketing efforts. This will allow us to understand your needs and tailor our services
+                    to best fit your requirements.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="mt-10 border border-[#191A23] drop-shadow-2xl  rounded-3xl p-10">
+                <div class="flex justify-between ">
+                    <div class="flex gap-5">
+                        <h3 class="text-5xl font-bold text-[#000000] ">02</h3>
+                        <div>
+                            <p class="mb-5 mt-5 text-2xl text-[#000000]">Research and Strategy Development</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="w-25 h-25" class="w-12 h-12" src="desktop/plus.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10 border border-[#191A23]   rounded-3xl p-10">
+                <div class="flex justify-between ">
+                    <div class="flex gap-5">
+                        <h3 class="text-5xl font-bold text-[#000000] ">03</h3>
+                        <div>
+                            <p class="mb-5 mt-5 text-2xl text-[#000000]">Implementation</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="w-25 h-25" class="w-12 h-12" src="desktop/plus.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10 border border-[#191A23] drop-shadow-2xl  rounded-3xl p-10">
+                <div class="flex justify-between ">
+                    <div class="flex gap-5">
+                        <h3 class="text-5xl font-bold text-[#000000] ">04</h3>
+                        <div>
+                            <p class="mb-5 mt-5 text-2xl text-[#000000]">Monitoring and Optimization</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="w-25 h-25" class="w-12 h-12" src="desktop/plus.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-black mx-3.5 p-16 rounded-lg">
+        <nav class="text-center">
+            <div class="flex flex-col md:flex-row justify-between  text-[#000000] gap-5">
+                <div class="">
+                    <img class="ml-16 md:ml-1" src="desktop/logo-small.png" />
+                </div>
+                <div class=" ">
+                    <ul class="text-xl flex flex-col md:flex-row gap-5 text-[#FFFFFF] ">
+                        <li> <a href="">About Us</a></li>
+                        <li> <a href="">Services</a></li>
+                        <li> <a href="">Use Cases</a></li>
+                        <li> <a href="">Pricing</a></li>
+                        <li> <a href="">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="hidden  md:flex md:gap-3">
+                        <li><img class="w-12 h-12" src="desktop/social-linkedin.png" /></li>
+                        <li><img class="w-12 h-12" src="desktop/social-fb.png" /></li>
+                        <li><img class="w-12 h-12" src="desktop/social-twitter.png" /></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="flex flex-col md:flex-row md:gap-96">
+            <div class="mt-10  text-center">
+                <button class="text-lg text-[#000000] bg-[#B9FF66] rounded-md p-1 mb-5 text-center font-bold">Contact
+                    US</button>
+                <p class="text-sm text-[#FFFFFF] mb-5">Email: info@positivus.com</p>
+                <p class="text-sm text-[#FFFFFF] mb-5">Phone: 555-567-8901</p>
+                <p class="text-sm text-[#FFFFFF] mb-5">Address: 1234 Main St<br>
+                    Moonstone City, Stardust State 12345</p>
+            </div>
+            <div
+                class="bg-[#1F1F24] rounded-md p-8 flex flex-col md:flex-row  items-center gap-3 max-w-md mx-auto mt-10">
+                <input type="email" placeholder="Email"
+                    class="bg-transparent border border-gray-500 rounded-lg px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:border-white">
+                <button class="bg-[#B9FF66] text-black rounded-lg px-4 py-2 font-semibold">Subscribe to news</button>
+            </div>
+        </div>
+        <div
+            class="border-t border-gray-500 mt-10 pt-5 flex flex-col md:flex-row gap-2  items-center text-gray-400 text-2xl">
+            <p class="text-center item-center w-full">© 2023 Positivus. All Rights Reserved. <a href="#"
+                    class="hover:text-white">Privacy Policy</a></p>
+
+        </div>
+        </div>
+    </footer>
+
+
 </body>
+
 </html>
